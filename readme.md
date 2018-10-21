@@ -26,6 +26,7 @@ Carousel with **automatic** scroll :
             "./img/img4.jpg",
         ],
     });
+    carrousselPerso.createCarroussel();
 
 Carousel with **manual** scroll :
 
@@ -39,6 +40,7 @@ Carousel with **manual** scroll :
             "./img/img4.jpg",
         ],
     });
+    carrousselPerso.createCarroussel();
 
 | Name  | Value(s)           | Require | Type   | Desc                                                                           |
 |-------|--------------------|---------|--------|--------------------------------------------------------------------------------|
