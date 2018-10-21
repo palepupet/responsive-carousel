@@ -7,11 +7,11 @@ Simple responsive carousel to show some of your pics.
 
 ## Installation
 
-    'npm install @palepupet/responsive-carousel'
+    'npm install responsive-carousel'
 
 ## Usage
 
-    const carrousselPerso = require('@palepupet/responsive-carousel');
+    const carrousselPerso = require('responsive-carousel');
 
 Carousel with **automatic** scroll :
 
