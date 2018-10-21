@@ -45,6 +45,6 @@ Carousel with **manual** scroll :
 | name  | carouselDivId      | yes     | string | The name of the id's div where the carousel will be put                        |
 | type  | automatic / manual | yes     | string | The type of the carousel. Automatic = automatic scroll. Manual = manual scroll |
 | timer | 1500 / ""          | no      | number | The time, in miliseconde, between each new image's scroll                      |
-| image | pathImg1, pathImg2 | yes     | string | The array with all your relative path, absolute path, url of your images       |
+| image | pathImg1, pathImg2 | yes     | array  | The array with all your relative path, absolute path, url of your images       |
 
 >If timer is not defined in automatic mode, timer will be set to 2000ms
