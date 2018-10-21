@@ -1,7 +1,4 @@
-/**
- *
- */
-class Carroussel {
+export default class Carroussel {
 
 
     constructor({name, type, timer, image}) {
@@ -210,4 +207,4 @@ class Carroussel {
         }
     }
 
-}
+};
