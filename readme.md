@@ -7,15 +7,15 @@ Simple responsive carousel to show some of your pics.
 
 ## Installation
 
-    'npm install responsive-carousel'
+    npm i simple-responsive-carousel
 
 ## Usage
 
-    const carrousselPerso = require('responsive-carousel');
+    import carrousselPerso from 'simple-responsive-carousel';
 
 Carousel with **automatic** scroll :
 
-    carrousselPerso = new Carroussel({
+    let carrousselPerso = new Carroussel({
         "name": "carroussel",
         "type": "automatic",
         "timer": 2000,
@@ -29,7 +29,7 @@ Carousel with **automatic** scroll :
 
 Carousel with **manual** scroll :
 
-    carrousselPerso = new Carroussel({
+    let carrousselPerso = new Carroussel({
         "name": "carroussel",
         "type": "manual",
         "image": [
@@ -42,9 +42,13 @@ Carousel with **manual** scroll :
 
 | Name  | Value(s)           | Require | Type   | Desc                                                                           |
 |-------|--------------------|---------|--------|--------------------------------------------------------------------------------|
-| name  | carouselDivId      | yes     | string | The name of the id's div where the carousel will be put                        |
+| name  | carouselDivId      | yes     | string | The name of the div ID where the carousel will be show                         |
 | type  | automatic / manual | yes     | string | The type of the carousel. Automatic = automatic scroll. Manual = manual scroll |
-| timer | 1500 / ""          | no      | number | The time, in miliseconde, between each new image's scroll                      |
-| image | pathImg1, pathImg2 | yes     | array  | The array with all your relative path, absolute path, url of your images       |
+| timer | 1500 / ""          | no      | number | The time, in millisecond, between each image                                   |
+| image | pathImg1, pathImg2 | yes     | string | The array with all your relative path, absolute path or url of your images     |
 
 >If timer is not defined in automatic mode, timer will be set to 2000ms
+
+## Example
+
+![alt text](https://raw.githubusercontent.com/palepupet/simple-responsive-carousel/master/example/carousel-example.JPG "Example of Carousel")
