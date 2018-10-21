@@ -15,7 +15,8 @@ Simple responsive carousel to show some of your pics.
 
 Carousel with **automatic** scroll :
 
-    carrousselPerso = new Carroussel("carroussel", {
+    carrousselPerso = new Carroussel({
+        "name": "carroussel",
         "type": "automatic",
         "timer": 2000,
         "image": [
@@ -28,7 +29,8 @@ Carousel with **automatic** scroll :
 
 Carousel with **manual** scroll :
 
-    carrousselPerso = new Carroussel("carroussel", {
+    carrousselPerso = new Carroussel({
+        "name": "carroussel",
         "type": "manual",
         "image": [
             "./img/img1.jpg",
@@ -38,10 +40,11 @@ Carousel with **manual** scroll :
         ],
     });
 
-| Name  | Value 1        | Value 2        | Value 3 | Require | Type   | Desc                                                                           |
-|-------|--------------- |----------------|---------|---------|--------|--------------------------------------------------------------------------------|
-| type  | automatic      | manual         | X       | yes     | string | The type of the carousel. Automatic = automatic scroll. Manual = manual scroll |
-| timer | 1500           | ""             | X       | no      | number | The time, in miliseconde, between each new image's scroll                        |
-| image | path to image1 | path to image2 | etc.    | yes     | string | The array with all your relative path, absolute path, url of your images       |
+| Name  | Value(s)           | Require | Type   | Desc                                                                           |
+|-------|--------------------|---------|--------|--------------------------------------------------------------------------------|
+| name  | carouselDivId      | yes     | string | The name of the id's div where the carousel will be put                        |
+| type  | automatic / manual | yes     | string | The type of the carousel. Automatic = automatic scroll. Manual = manual scroll |
+| timer | 1500 / ""          | no      | number | The time, in miliseconde, between each new image's scroll                      |
+| image | pathImg1, pathImg2 | yes     | string | The array with all your relative path, absolute path, url of your images       |
 
 >If timer is not defined in automatic mode, timer will be set to 2000ms
