@@ -1,9 +1,12 @@
+/**
+ *
+ */
 class Carroussel {
 
 
-    constructor(divIdName, {type, timer, image}) {
+    constructor({name, type, timer, image}) {
 
-        this.divIdName = divIdName;
+        this.name = name;
         this.type = type;
         this.timer = timer;
         this.image = image;
@@ -20,11 +23,11 @@ class Carroussel {
 
     validtionRessource() {
 
-        if(typeof this.divIdName !== "string") {
-            throw "divIdName must be to type : string";
+        if(typeof this.name !== "string") {
+            throw "name must be to type : string";
 
-        } else if(this.divIdName.length <= 0) {
-            throw "divIdName must contain at least 1 character";
+        } else if(this.name.length <= 0) {
+            throw "name must contain at least 1 character";
         }
 
 
@@ -63,7 +66,7 @@ class Carroussel {
     createDiv(tabImage, timer, type, interval) {
         
         // Get div by its id
-        this.divId = document.querySelector("#" + this.divIdName);
+        this.divId = document.querySelector("#" + this.name);
 
         // Create p & img elements to put div inside
         this.pImage = document.createElement("p");
@@ -161,7 +164,6 @@ class Carroussel {
             clearInterval(obj.interval);
             obj.lunchTimer(numImage)
         }
-        
     }
 
 
