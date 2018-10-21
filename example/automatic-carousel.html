@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Automatic carousel</title>
+
+    <style>
+        .carousel{width:500px;}
+    </style>
+
+</head>
+<body>
+
+    <h1>Automatic carousel</h1>
+
+    <div id="carrousselAuto" class="carousel"></div>
+    
+
+    <script src="Carroussel.js"></script>
+    <script>
+            const carrousselAuto = new Carroussel("carrousselAuto", {
+                "type": "automatic",
+                "timer": 1000,
+                "image": [
+                    "./img/img1.jpg",
+                    "./img/img2.jpg",
+                    "./img/img3.jpg",
+                    "./img/img4.jpg",
+                ],
+            
+            });
+            
+            carrousselAuto.createCarroussel();
+    </script>
+</body>
+</html>

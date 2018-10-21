@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Manual carousel</title>
+
+    <style>
+        .carousel{width:500px;}
+    </style>
+
+</head>
+<body>
+
+    <h1>Manual carousel</h1>
+    
+    <div id="carrousselManual" class="carousel"></div>
+
+
+    <script src="Carroussel.js"></script>
+    <script>
+            const carrousselManual = new Carroussel("carrousselManual", {
+                "type": "manual",
+                "image": [
+                    "./img/img1.jpg",
+                    "./img/img2.jpg",
+                    "./img/img3.jpg",
+                    "./img/img4.jpg",
+                ],
+            
+            });
+
+            carrousselManual.createCarroussel();
+    </script>
+</body>
+</html>
